@@ -9,15 +9,6 @@
       "install-client": "cd client && npm install",
       "heroku-postbuild": "npm run install-client && npm run build"
     },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/Evansun0622/Virtual-Stock-Market-Simulator"
-    },
-    "author": "Evan Sun, Eric Tong, Joe Lin, Kevin Li",
-    "bugs": {
-      "url": "https://github.com/Evansun0622/Virtual-Stock-Market-Simulator/issues"
-    },
-    "homepage": "https://github.com/Evansun0622/Virtual-Stock-Market-Simulator#readme",
     "dependencies": {
       "axios": "^0.20.0",
       "bcrypt": "^5.0.0",

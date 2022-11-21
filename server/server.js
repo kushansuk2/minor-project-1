@@ -17,17 +17,20 @@ app.use(express.json());
 app.use(cookieParser("secretcode"));
 
 // DATABASE
-const DB = process.env.MONGO_URI.replace(
-  "<password>",
-  process.env.MONGO_PASSWORD
-);
+// const DB = process.env.MONGO_URI.replace(
+//   "<password>",
+//   process.env.MONGO_PASSWORD
+// );
+
+const DB = process.env.MONGO_URI
 
 mongoose.connect(DB, {
     useNewUrlParser: true,
-    useCreateIndex: true,
+    // useCreateIndex: true,
     useUnifiedTopology: true,
-    useFindAndModify: false,
+    // useFindAndModify: false,
   })
+  .then(() => console.log('db connected'))
   .catch((err) => console.log(err));
 
 // ROUTES
