@@ -32,7 +32,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
         <ListItemIcon>
           <DashboardIcon />
         </ListItemIcon>
-        <ListItemText primary="Dashboard" />
+        <ListItemText primary="Portfolio" />
       </ListItem>
       <ListItem
         button

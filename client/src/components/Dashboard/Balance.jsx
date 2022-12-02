@@ -1,8 +1,9 @@
 import React, { useContext, useState, useEffect } from "react";
 import UserContext from "../../context/UserContext";
-import { Typography } from "@material-ui/core/";
+import { Card, Grid, Typography } from "@material-ui/core/";
 import Title from "../Template/Title.jsx";
 import styles from "./Dashboard.module.css";
+import BarChart from "../Search/BarChart";
 
 const Balance = ({ purchasedStocks }) => {
   const { userData } = useContext(UserContext);
@@ -69,7 +70,7 @@ const Balance = ({ purchasedStocks }) => {
     </React.Fragment>
   );
 };
-/*
+
 const BarChartCard = ({ sixMonthAverages, stockInfo }) => {
   return (
     <Grid item xs={12} sm component={Card} className={styles.card}>
@@ -77,5 +78,5 @@ const BarChartCard = ({ sixMonthAverages, stockInfo }) => {
     </Grid>
   );
 };
-*/
+
 export default Balance;

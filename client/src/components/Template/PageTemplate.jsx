@@ -114,6 +114,7 @@ const PageTemplate = () => {
     setSettingsOpen(true);
   };
 
+  console.log(Dashboard);
   return (
     <div className={styles.root}>
       <CssBaseline />
@@ -147,7 +148,7 @@ const PageTemplate = () => {
               noWrap
               className={styles.title}
             >
-              {currentPage === "dashboard" && "Dashboard"}
+              {currentPage === "dashboard" && "TRADEMILL"}
               {currentPage === "news" && "Market News"}
               {currentPage === "search" && "Search"}
             </Typography>
@@ -195,6 +196,7 @@ const PageTemplate = () => {
         )}
         {settingsOpen && <SettingsModal setSettingsOpen={setSettingsOpen} />}
       </main>
+      
     </div>
   );
 };
